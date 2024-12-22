@@ -12,12 +12,10 @@ struct component_s {
     void (*run)(const component_t *component);
 };
 
-void init_component(component_t *component,
-                    int input_number,
-                    int output_number,
-                    void (*run)(const component_t *component));
+component_t *init_component(int input_number,
+                            int output_number,
+                            void (*run)(const component_t *component));
 void delete_component(component_t *component);
-
-void run_and(const component_t *component);
+void dump_component(const component_t *component);
 
 #endif //MICROPROCESSOR_COMPONENT_H

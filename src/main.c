@@ -2,18 +2,26 @@
 
 int main(void)
 {
-    component_t and;
+    component_t *and = init_and;
+    component_t *or = init_or;
+    component_t *not = init_not;
 
-    init_component(&and, 2, 1, &run_and);
+    and->input[0] = true;
+    and->input[1] = false;
+    and->run(and);
+    dump_component(and);
 
-    and.input[0] = true;
-    and.input[1] = true;
+    or->input[0] = true;
+    or->input[1] = false;
+    or->run(or);
+    dump_component(or);
 
-    and.run(&and);
+    not->input[0] = true;
+    not->run(not);
+    dump_component(not);
 
-    printf("%d\n", and.output[0]);
-
-    delete_component(&and);
-
+    delete_component(and);
+    delete_component(or);
+    delete_component(not);
     return 0;
 }

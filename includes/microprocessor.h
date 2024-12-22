@@ -4,6 +4,10 @@
     #include <stdio.h>
     #include <stdlib.h>
 
-    #include "logic-gates/component.h"
+    #include <component.h>
+
+    #include <logic-gates/and.h>
+    #include <logic-gates/or.h>
+    #include <logic-gates/not.h>
 
 #endif //MICROPROCESSOR_MICROPROCESSOR_H

@@ -11,4 +11,6 @@ add_executable(
         src/main.c
         src/components.c
         src/logic-gates/and.c
+        src/logic-gates/or.c
+        src/logic-gates/not.c
 )

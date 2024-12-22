@@ -1,4 +1,4 @@
-#include <logic-gates/component.h>
+#include <component.h>
 
 void run_and(const component_t *component)
 {
