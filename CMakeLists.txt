@@ -13,4 +13,5 @@ add_executable(
         src/logic-gates/and.c
         src/logic-gates/or.c
         src/logic-gates/not.c
+        src/logic-gates/xor.c
 )

@@ -9,5 +9,6 @@
     #include <logic-gates/and.h>
     #include <logic-gates/or.h>
     #include <logic-gates/not.h>
+    #include <logic-gates/xor.h>
 
 #endif //MICROPROCESSOR_MICROPROCESSOR_H
