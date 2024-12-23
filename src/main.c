@@ -8,16 +8,16 @@ int main(void)
 
     and->input[0] = true;
     and->input[1] = false;
-    and->run(and);
+    and->compute(and);
     dump_component(and);
 
     or->input[0] = true;
     or->input[1] = false;
-    or->run(or);
+    or->compute(or);
     dump_component(or);
 
     not->input[0] = true;
-    not->run(not);
+    not->compute(not);
     dump_component(not);
 
     delete_component(and);

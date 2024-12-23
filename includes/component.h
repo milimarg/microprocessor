@@ -9,7 +9,7 @@ struct component_s {
     int output_number;
     bool *input;
     bool *output;
-    void (*run)(const component_t *component);
+    void (*compute)(const component_t *component);
 };
 
 component_t *init_component(int input_number,

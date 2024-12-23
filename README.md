@@ -1,6 +1,6 @@
 # microprocessor
 
-... (replace with the purpose of this project)
+Basic implementation of a microprocessor from scratch.
 
 ## Build
 

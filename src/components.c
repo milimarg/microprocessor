@@ -8,7 +8,7 @@ component_t *init_component(int input_number,
 
     component->input_number = input_number;
     component->output_number = output_number;
-    component->run = run;
+    component->compute = run;
     component->input = malloc(sizeof(bool) * component->input_number);
     component->output = malloc(sizeof(bool) * component->output_number);
 
